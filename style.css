@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 200px;
+    max-width: auto;
+}
+body {
+    background-color: lightgreen;
+}
+header {
+    background: white;
+    padding: 20px;
+}
+header > h1 {
+    color:darkorange;
+    text-align:center;
+    font-family:'Kanit', sans-serif;
+}
+.score-board {
+    color:darkorange;
+    margin: 20px auto;
+    border:3px solid darkgreen;
+    border-radius:4px;
+    text-align:center;
+    width: 200px;
+    font-size: 40px;
+    padding: 15px 20px;
+    font-family:'Kanit', sans-serif;
+}
+.badge {
+    background-color: bisque;
+    font-size: 20px;
+    padding:2px;
+}
