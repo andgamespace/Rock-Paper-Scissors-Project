@@ -9,10 +9,32 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissor")
 function getComputerChoice() {
     const choices = ["r", "p", "s"];
-}
+    const randomNumber = Math.floor(Math.random() * 3);
+    return choices[randomNumber];
+}                   
+
+
 function game(userChoice){
-    console.log("choice:" + userChoice)
+    const computerChoice = getComputerChoice();
+    switch(userChoice + computerChoice) {
+        case "rockscissor":
+        case "paperrock":
+        case "scissorpaper":
+            console.log("USER WINS")
+            break;
+        case "rockpaper":
+        case "paperscissor":
+        case "scissorrock":
+            console.log("computer wins")
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorscissor":
+            console.log("draw")
+            break;
+    }
 }
+
 function main() {
     rock_div.addEventListener('click', function() {
         game("rock");
