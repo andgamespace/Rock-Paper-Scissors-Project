@@ -12,6 +12,7 @@ header {
     background: white;
     padding: 20px;
 }
+
 header > h1 {
     color:darkorange;
     text-align:center;
@@ -80,4 +81,17 @@ header > h1 {
     font-family: 'Kanit', sans-serif;
     font-size: 20px;
     margin-top: 20px;
+}
+.green-glow {
+    border: 4px solid #4cdc7d;
+    box-shadow: 0 0 10px #42b43a;
+}
+.red-glow {
+    border: 4px solid #fa144b;
+    box-shadow: 0 0 10px #d42223;
+}
+.gray-glow { 
+    border: 4px solid #464646;
+    box-shadow: 4px solid #3e3e3e;
+
 }
